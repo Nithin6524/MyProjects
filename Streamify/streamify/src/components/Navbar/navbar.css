@@ -1,0 +1,29 @@
+.nav{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    color:white;
+    font-family: Roboto;
+    font-size:1.6em;
+    font-weight: 400;
+    background: linear-gradient(to bottom, black, black 10%, transparent);
+}
+
+.link{
+   height:1.3em;
+}
+.link::after,.logo::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #410a6e;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(0);
+}
+.link:hover::after, .logo:hover::after{
+    transform: scale(1);
+}
+
